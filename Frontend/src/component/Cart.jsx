@@ -68,7 +68,7 @@ export function Cart() {
               ) : (
                 <>
                   Cart looks empty{" "}
-                  <Link to="/React-ecommerce/" className="text-blue-500">
+                  <Link to="/" className="text-blue-500">
                     come let's check latest collection
                   </Link>
                 </>
@@ -85,7 +85,7 @@ export function Cart() {
                     padding: "24px 0",
                   }}
                 >
-                  <Link to={`/React-ecommerce/product/${product.id}`}>
+                  <Link to={`/product/${product.id}`}>
                     <li
                       style={{
                         display: "flex",
@@ -361,7 +361,7 @@ export function Cart() {
                     type="button"
                     className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                     onClick={() => {
-                      navigate("/React-ecommerce/checkout");
+                      navigate("/checkout");
                     }}
                   >
                     Checkout

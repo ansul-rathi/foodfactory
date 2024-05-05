@@ -9,11 +9,11 @@ import { TextField, Typography } from "@mui/material";
 const menuItems = [
   {
     name: "Home",
-    href: "/React-ecommerce/",
+    href: "/",
   },
   {
     name: "AboutUs",
-    href: "/React-ecommerce/about-business",
+    href: "/about-business",
   },
 ];
 
@@ -52,7 +52,7 @@ export function Navbar() {
           margin: "auto",
         }}
       >
-        <Link to="/React-ecommerce/" style={{ display: "flex" }}>
+        <Link to="/" style={{ display: "flex" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <span>
               <svg
@@ -90,7 +90,7 @@ export function Navbar() {
         <div style={{ display: "flex", alignItems: "center" }}>
           <TextField placeholder="Search Product" />
 
-          <Link to="/React-ecommerce/cartitems" style={{ marginLeft: 20 }}>
+          <Link to="/cartitems" style={{ marginLeft: 20 }}>
             <button
               style={{
                 borderRadius: "9999px",

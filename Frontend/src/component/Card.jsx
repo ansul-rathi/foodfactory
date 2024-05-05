@@ -23,7 +23,7 @@ const Card = (props) => {
   return (
     <div className="card-container">
       {console.log(props)}
-      <Link to={`/React-ecommerce/product/${props.data.id}`}>
+      <Link to={`/product/${props.data.id}`}>
         <div className="image-container">
           <img src={props.data.image} alt={props.data.title} />
         </div>

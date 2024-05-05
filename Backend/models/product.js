@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const productSchema = mongoose.model("users", {
+const productSchema = mongoose.model("dishes", {
   id: { type: Number },
   name: { type: String, require: true },
   img: { type: String, require: true },

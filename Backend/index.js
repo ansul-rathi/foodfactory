@@ -1,12 +1,16 @@
 const express = require("express");
-
-// const dotenv = require("dotenv");
+const mongoose = require("mongoose");
+const cors = require("cors");
 
 const app = express();
-// dotenv.config();
+
+// Enable CORS for all routes
+app.use(cors());
 
 const PORT = 7000;
-const MONGOURL = "mongodb://localhost:27017/food-chain";
+// const MONGOURL = "mongodb://localhost:27017/food-chain";
+const MONGOURL =
+  "mongodb+srv://gofood:ansulrathi123@cluster0.8lvzpzm.mongodb.net/";
 
 app.use(express.json());
 mongoose

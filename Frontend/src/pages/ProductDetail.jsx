@@ -81,7 +81,7 @@ export function ProductDetail() {
                 <h1 className="my-4 text-3xl font-semibold text-black">
                   {productDetail.title}
                 </h1>
-                <div className="my-4 flex items-center">
+                {/* <div className="my-4 flex items-center">
                   <span className="flex items-center space-x-1">
                     {[
                       ...Array(Math.floor(productDetail?.rating?.rate || 0)),
@@ -92,11 +92,11 @@ export function ProductDetail() {
                       {Math.floor(productDetail?.rating?.rate || 0)}
                     </span>
                   </span>
-                </div>
-                <h2 className="text-sm font-semibold tracking-widest text-gray-500">
+                </div> */}
+                {/* <h2 className="text-sm font-semibold tracking-widest text-gray-500">
                   {productDetail.rating?.count}+ brought in past month
-                </h2>
-                <p className="leading-relaxed">{productDetail.description}</p>
+                </h2> */}
+                {/* <p className="leading-relaxed">{productDetail.description}</p> */}
                 <div className="flex items-center justify-between">
                   <span className="title-font text-xl font-bold text-gray-900">
                     $ {productDetail.price} &nbsp;

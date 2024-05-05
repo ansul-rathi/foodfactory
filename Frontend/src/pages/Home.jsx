@@ -16,7 +16,7 @@ function Home() {
   async function getData() {
     try {
       setisLoading(true);
-      let { data } = await axios.get("https://fakestoreapi.com/products");
+      let { data } = await axios.get("http://localhost:7000/api/products");
       setProductList(data);
     } catch (error) {
       console.error("Error -- ", error);

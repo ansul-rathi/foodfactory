@@ -22,9 +22,14 @@ const Card = (props) => {
   }
   return (
     <div className="card-container">
+      {console.log(props)}
       <Link to={`/React-ecommerce/product/${props.data.id}`}>
         <div className="image-container">
-          <img src={props.data.image} alt={props.data.title} />
+          <img
+            src={props.data.img}
+            alt={props.data.title}
+            style={{ objectFit: "fill" }}
+          />
         </div>
       </Link>
       <div className="text-containers">
@@ -37,9 +42,10 @@ const Card = (props) => {
               height: "10px",
             }}
           >
-            {props.data.title.split(" ").length > 3
+            {/* {props.data.title.split(" ").length > 3
               ? `${props.data.title.split(" ").slice(0, 3).join(" ")}...`
-              : props.data.title}
+              : props.data.title} */}
+            {props.data.name}
           </h2>
           {/* <p
             style={{ color: "grey", margin: "10px 0 20px", height: "10px" }}

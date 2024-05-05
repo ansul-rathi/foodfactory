@@ -7,7 +7,7 @@ import { PageNotFound } from "./pages/PageNotFound.jsx";
 import { ProductDetail } from "./pages/ProductDetail.jsx";
 import { Layout } from "./pages/Layout.jsx";
 import { Cart } from "./component/Cart.jsx";
-import { Checkout } from "./pages/Checkout.jsx";
+// import { Checkout } from "./pages/Checkout.jsx";
 import { store } from "./store.js";
 import { Provider } from "react-redux";
 import AboutUs from "./pages/AboutUs.jsx";
@@ -15,7 +15,7 @@ import Success from "./component/Success.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/React-ecommerce",
+    path: "/",
     element: <Layout />,
     errorElement: <PageNotFound />,
     children: [

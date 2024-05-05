@@ -25,11 +25,7 @@ const Card = (props) => {
       {console.log(props)}
       <Link to={`/React-ecommerce/product/${props.data.id}`}>
         <div className="image-container">
-          <img
-            src={props.data.img}
-            alt={props.data.title}
-            style={{ objectFit: "fill" }}
-          />
+          <img src={props.data.image} alt={props.data.title} />
         </div>
       </Link>
       <div className="text-containers">
